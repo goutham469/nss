@@ -1,0 +1,18 @@
+.admin-header{
+    position: fixed;
+    width: 100%;
+
+    background-color: #72a9db;
+}
+.admin-header-item{
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    border-right: 2px solid black;
+    height: 25px;
+    border-radius: 10px;
+    padding: 2px;
+}
+.admin-header-item:hover{
+    color: white;
+    border-right: 2px solid rgb(255, 255, 255);
+}

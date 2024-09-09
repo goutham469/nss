@@ -1,0 +1,49 @@
+import React from 'react'
+import './Description.css'
+import { HeroTextBarsData,OurReach,events } from '../Constants'
+import Images from '../Media'
+import ImagesBar from '../ImagesBar/ImagesBar'
+import Reach from '../Reach/Reach'
+import EventMini from '../EventMini/EventMini'
+
+function HeroTextBars({data})
+{
+    return <div style={{backgroundImage:`url(${Images.HeroBG})`}} className='hero-text-bars' >
+                <b>{data.question}</b><br/>
+                <p>{data.answer}</p>
+            </div>
+}
+
+
+function Description() {
+  return (
+    <div style={{textAlign:"center"}}>
+        <ImagesBar/>
+        <center>
+            {
+                HeroTextBarsData.map(data=><HeroTextBars data={data}/>)
+            }
+        </center>
+        <center>
+            <b style={{fontSize:"30px"}}>Our Reach</b>
+            <div style={{display:"flex",justifyContent:"space-between",maxWidth:"600px",flexWrap:"wrap",border:"5px solid white",borderRadius:"10px",padding:"20px"}}>
+                {
+                    OurReach.map(data=><Reach data={data}/>)
+                }
+            </div>
+        </center>
+        <br/>
+        <br/>
+        <center>
+            <b style={{fontSize:"30px"}}>events</b>
+            <div style={{display:"flex",justifyContent:"space-around",flexWrap:"wrap"}}>
+                {
+                    events.map(event=><EventMini data={event}/>)
+                }
+            </div>
+        </center>
+    </div>
+  )
+}
+
+export default Description

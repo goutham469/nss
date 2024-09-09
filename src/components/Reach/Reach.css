@@ -1,0 +1,6 @@
+/* In your CSS file, e.g., App.css */
+
+.tilt {
+    transform: rotate(45deg); /* Tilt the image by 60 degrees */
+  }
+  

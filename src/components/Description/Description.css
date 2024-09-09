@@ -1,0 +1,8 @@
+.hero-text-bars{
+    max-width: 600px;
+    text-align: justify;
+    /* background-color: var(--tertiary-color); */
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
