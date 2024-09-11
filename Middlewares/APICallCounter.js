@@ -1,6 +1,8 @@
 const APICallCounter = async (req,res,next)=>{
-    await req.websiteData.updateOne({key:"1"},{$inc:{apiCalls:1}})
-
+    if(req.websiteData)
+    {
+        await req.websiteData.updateOne({key:"1"},{$inc:{apiCalls:1}})
+    }
     next();
 }
 
