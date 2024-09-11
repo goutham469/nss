@@ -103,12 +103,12 @@ export const events = [
 export const detailedEvents = [
     {
         year:"2024",
-        eventsConducted:"5",
+        eventsConducted:"3",
         events : [
             {
               name: 'Clay Ganesha',
               description: 'Promote eco-friendly Ganesha to improve environmental conditions by using clay idols that dissolve in water without polluting it.',
-              heroImage: 'https://drive.google.com/uc?export=view&id=1dUJ1N78rhxKf9R7Y9DRuyzZ4Ulb6zVsZ',
+              heroImage: 'https://ecofriendlyganeshaidols.com/wp-content/uploads/2020/03/CLAY-GANESHA-AG7028.jpg',
               dateStarted: '2024-09-01',
               dateEnded: '2024-09-10',
               eventAchievements: 'Created 200 eco-friendly Ganesha idols, educated 500+ participants on the benefits of eco-friendly celebrations.',
@@ -116,7 +116,32 @@ export const detailedEvents = [
               placesVisited: 'Local schools and communities in the city.',
               images: [
                 {
-                  url: 'https://drive.google.com/uc?export=view&id=1dUJ1N78rhxKf9R7Y9DRuyzZ4Ulb6zVsZ',
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976929/20240906_131341_dm4zya.jpg',
+                  alt: 'Eco-friendly Ganesha making workshop',
+                  description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976924/20240906_131331_u20lbd.jpg',
+                  alt: 'Eco-friendly Ganesha making workshop',
+                  description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976923/20240906_131038_vqingi.jpg',
+                  alt: 'Eco-friendly Ganesha making workshop',
+                  description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976920/20240906_131022_ei5f17.jpg',
+                  alt: 'Eco-friendly Ganesha making workshop',
+                  description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976916/20240906_10905pmByGPSMapCamera_-_Copy_-_Copy_bbueqs.jpg',
+                  alt: 'Eco-friendly Ganesha making workshop',
+                  description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976916/20240906_10905pmByGPSMapCamera_-_Copy_kmaofb.jpg',
                   alt: 'Eco-friendly Ganesha making workshop',
                   description: 'Participants learning to make eco-friendly clay Ganesha idols.'
                 }
@@ -132,15 +157,50 @@ export const detailedEvents = [
             {
               name: 'Blood Donation Camp',
               description: 'Encourage students and local citizens to donate blood and save lives.',
-              heroImage: 'https://drive.google.com/uc?export=view&id=2kKhdNp1NsfPVw8BwY4Jlv6u7zxsLnW7',
+              heroImage: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988955/Hero_qq2ifc.jpg',
               dateStarted: '2024-08-15',
               dateEnded: '2024-08-15',
-              eventAchievements: 'Collected 150 blood units, contributed to local hospitals.',
+              eventAchievements: 'Collected 600 blood units, contributed to local hospitals.',
               driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
               placesVisited: 'College campus',
               images: [
                 {
-                  url: 'https://drive.google.com/uc?export=view&id=2kKhdNp1NsfPVw8BwY4Jlv6u7zxsLnW7',
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988772/Snapchat-1577214039_j6muw0.jpg',
+                  alt: 'Blood Donation Setup',
+                  description: 'Volunteers setting up the blood donation area.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988771/Snapchat-1478453225_mgxsnr.jpg',
+                  alt: 'Blood Donation Setup',
+                  description: 'Volunteers setting up the blood donation area.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988770/Snapchat-1235526245_zlvkaj.jpg',
+                  alt: 'Blood Donation Setup',
+                  description: 'Volunteers setting up the blood donation area.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+                  alt: 'Blood Donation Setup',
+                  description: 'Volunteers setting up the blood donation area.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+                  alt: 'Blood Donation Setup',
+                  description: 'Volunteers setting up the blood donation area.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+                  alt: 'Blood Donation Setup',
+                  description: 'Volunteers setting up the blood donation area.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988763/Snapchat-355862009_nbw9fg.jpg',
+                  alt: 'Blood Donation Setup',
+                  description: 'Volunteers setting up the blood donation area.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988764/Snapchat-376460287_edgxbc.jpg',
                   alt: 'Blood Donation Setup',
                   description: 'Volunteers setting up the blood donation area.'
                 }
@@ -154,89 +214,32 @@ export const detailedEvents = [
               ]
             },
             {
-              name: 'Rice Distribution',
-              description: 'Distribution of rice to underprivileged families in rural areas.',
-              heroImage: 'https://drive.google.com/uc?export=view&id=3mMbKRz1fHFV7MfFbwVqSjs1ZyWlGkK3',
-              dateStarted: '2024-07-20',
-              dateEnded: '2024-07-21',
-              eventAchievements: 'Distributed 1000 kg of rice to 200 families.',
-              driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
-              placesVisited: 'Rural villages nearby',
-              images: [
-                {
-                  url: 'https://drive.google.com/uc?export=view&id=3mMbKRz1fHFV7MfFbwVqSjs1ZyWlGkK3',
-                  alt: 'Rice distribution',
-                  description: 'Volunteers handing out rice to families.'
-                }
-              ],
-              videos: [
-                {
-                  url: 'https://www.youtube.com/watch?v=baZq6bfcths',
-                  alt: 'Rice Distribution Event',
-                  description: 'A video showcasing the rice distribution efforts.'
-                }
-              ]
-            },
-            {
-              name: 'Clothes Distribution',
-              description: 'Providing clothes to the needy in underprivileged communities.',
-              heroImage: 'https://drive.google.com/uc?export=view&id=4tNzpLs1jK5k9WxBdL7vjfGpU7zxsP8L',
-              dateStarted: '2024-06-05',
-              dateEnded: '2024-06-06',
-              eventAchievements: 'Distributed over 500 sets of clothes.',
-              driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
-              placesVisited: 'Slum areas in the city',
-              images: [
-                {
-                  url: 'https://drive.google.com/uc?export=view&id=4tNzpLs1jK5k9WxBdL7vjfGpU7zxsP8L',
-                  alt: 'Clothes distribution',
-                  description: 'Volunteers distributing clothes to underprivileged families.'
-                }
-              ],
-              videos: [
-                {
-                  url: 'https://www.youtube.com/watch?v=bdVnldvGWEY',
-                  alt: 'Clothes Distribution Event',
-                  description: 'A video documenting the event and people’s reactions.'
-                }
-              ]
-            },
-            {
-              name: 'Medical Camp',
-              description: 'Free medical check-ups for people in rural communities.',
-              heroImage: 'https://drive.google.com/uc?export=view&id=5wNknXn1UShd7yJpTYvt7mvfYxhsJrZe',
-              dateStarted: '2024-05-12',
-              dateEnded: '2024-05-14',
-              eventAchievements: 'Provided medical check-ups to over 300 villagers.',
-              driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
-              placesVisited: 'Nearby rural communities',
-              images: [
-                {
-                  url: 'https://drive.google.com/uc?export=view&id=5wNknXn1UShd7yJpTYvt7mvfYxhsJrZe',
-                  alt: 'Medical Camp',
-                  description: 'Doctors conducting free check-ups for villagers.'
-                }
-              ],
-              videos: [
-                {
-                  url: 'https://www.youtube.com/watch?v=cDnZf74ri-8',
-                  alt: 'Medical Camp Video',
-                  description: 'A video showcasing the medical camp efforts and treatment.'
-                }
-              ]
-            },
-            {
-              name: 'Plantation Drive',
+              name: 'Seed Ball event',
               description: 'A plantation drive to improve greenery and reduce pollution.',
-              heroImage: 'https://drive.google.com/uc?export=view&id=6lMxQlN1c5dF9XmWdZrVjNsfFqksPr5b',
+              heroImage: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725989996/Hero_upqydy.jpg',
               dateStarted: '2024-04-22',
               dateEnded: '2024-04-23',
-              eventAchievements: 'Planted 500 saplings in urban and rural areas.',
+              eventAchievements: 'more than 500 seed balls were distributed.',
               driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
               placesVisited: 'Parks, schools, and rural areas',
               images: [
                 {
-                  url: 'https://drive.google.com/uc?export=view&id=6lMxQlN1c5dF9XmWdZrVjNsfFqksPr5b',
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988359/IMG_5811_bm4yhe.jpg',
+                  alt: 'Tree plantation drive',
+                  description: 'Volunteers planting saplings in various locations.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988360/IMG_5808_ahttvn.jpg',
+                  alt: 'Tree plantation drive',
+                  description: 'Volunteers planting saplings in various locations.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988360/IMG_5808_ahttvn.jpg',
+                  alt: 'Tree plantation drive',
+                  description: 'Volunteers planting saplings in various locations.'
+                },
+                {
+                  url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988362/IMG_5818_arkqsb.jpg',
                   alt: 'Tree plantation drive',
                   description: 'Volunteers planting saplings in various locations.'
                 }
@@ -250,7 +253,466 @@ export const detailedEvents = [
               ]
             }
           ]
-    }
+    },
+    {
+      year:"2023",
+      eventsConducted:"3",
+      events : [
+          {
+            name: 'Clay Ganesha',
+            description: 'Promote eco-friendly Ganesha to improve environmental conditions by using clay idols that dissolve in water without polluting it.',
+            heroImage: 'https://ecofriendlyganeshaidols.com/wp-content/uploads/2020/03/CLAY-GANESHA-AG7028.jpg',
+            dateStarted: '2024-09-01',
+            dateEnded: '2024-09-10',
+            eventAchievements: 'Created 200 eco-friendly Ganesha idols, educated 500+ participants on the benefits of eco-friendly celebrations.',
+            driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
+            placesVisited: 'Local schools and communities in the city.',
+            images: [
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976929/20240906_131341_dm4zya.jpg',
+                alt: 'Eco-friendly Ganesha making workshop',
+                description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976924/20240906_131331_u20lbd.jpg',
+                alt: 'Eco-friendly Ganesha making workshop',
+                description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976923/20240906_131038_vqingi.jpg',
+                alt: 'Eco-friendly Ganesha making workshop',
+                description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976920/20240906_131022_ei5f17.jpg',
+                alt: 'Eco-friendly Ganesha making workshop',
+                description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976916/20240906_10905pmByGPSMapCamera_-_Copy_-_Copy_bbueqs.jpg',
+                alt: 'Eco-friendly Ganesha making workshop',
+                description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976916/20240906_10905pmByGPSMapCamera_-_Copy_kmaofb.jpg',
+                alt: 'Eco-friendly Ganesha making workshop',
+                description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+              }
+            ],
+            videos: [
+              {
+                url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                alt: 'Event highlight video',
+                description: 'Highlight video showcasing the making of clay Ganesha idols and public awareness efforts.'
+              }
+            ]
+          },
+          {
+            name: 'Blood Donation Camp',
+            description: 'Encourage students and local citizens to donate blood and save lives.',
+            heroImage: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988955/Hero_qq2ifc.jpg',
+            dateStarted: '2024-08-15',
+            dateEnded: '2024-08-15',
+            eventAchievements: 'Collected 600 blood units, contributed to local hospitals.',
+            driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
+            placesVisited: 'College campus',
+            images: [
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988772/Snapchat-1577214039_j6muw0.jpg',
+                alt: 'Blood Donation Setup',
+                description: 'Volunteers setting up the blood donation area.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988771/Snapchat-1478453225_mgxsnr.jpg',
+                alt: 'Blood Donation Setup',
+                description: 'Volunteers setting up the blood donation area.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988770/Snapchat-1235526245_zlvkaj.jpg',
+                alt: 'Blood Donation Setup',
+                description: 'Volunteers setting up the blood donation area.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+                alt: 'Blood Donation Setup',
+                description: 'Volunteers setting up the blood donation area.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+                alt: 'Blood Donation Setup',
+                description: 'Volunteers setting up the blood donation area.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+                alt: 'Blood Donation Setup',
+                description: 'Volunteers setting up the blood donation area.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988763/Snapchat-355862009_nbw9fg.jpg',
+                alt: 'Blood Donation Setup',
+                description: 'Volunteers setting up the blood donation area.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988764/Snapchat-376460287_edgxbc.jpg',
+                alt: 'Blood Donation Setup',
+                description: 'Volunteers setting up the blood donation area.'
+              }
+            ],
+            videos: [
+              {
+                url: 'https://www.youtube.com/watch?v=bLOaJeS7YdE',
+                alt: 'Blood Donation Camp Video',
+                description: 'A short video documenting the camp’s proceedings and interviews.'
+              }
+            ]
+          },
+          {
+            name: 'Seed Ball event',
+            description: 'A plantation drive to improve greenery and reduce pollution.',
+            heroImage: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725989996/Hero_upqydy.jpg',
+            dateStarted: '2024-04-22',
+            dateEnded: '2024-04-23',
+            eventAchievements: 'more than 500 seed balls were distributed.',
+            driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
+            placesVisited: 'Parks, schools, and rural areas',
+            images: [
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988359/IMG_5811_bm4yhe.jpg',
+                alt: 'Tree plantation drive',
+                description: 'Volunteers planting saplings in various locations.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988360/IMG_5808_ahttvn.jpg',
+                alt: 'Tree plantation drive',
+                description: 'Volunteers planting saplings in various locations.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988360/IMG_5808_ahttvn.jpg',
+                alt: 'Tree plantation drive',
+                description: 'Volunteers planting saplings in various locations.'
+              },
+              {
+                url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988362/IMG_5818_arkqsb.jpg',
+                alt: 'Tree plantation drive',
+                description: 'Volunteers planting saplings in various locations.'
+              }
+            ],
+            videos: [
+              {
+                url: 'https://www.youtube.com/watch?v=drVN9V23reE',
+                alt: 'Plantation Drive Event',
+                description: 'A video documenting the plantation drive and community involvement.'
+              }
+            ]
+          }
+        ]
+  },
+  {
+    year:"2022",
+    eventsConducted:"3",
+    events : [
+        {
+          name: 'Clay Ganesha',
+          description: 'Promote eco-friendly Ganesha to improve environmental conditions by using clay idols that dissolve in water without polluting it.',
+          heroImage: 'https://ecofriendlyganeshaidols.com/wp-content/uploads/2020/03/CLAY-GANESHA-AG7028.jpg',
+          dateStarted: '2024-09-01',
+          dateEnded: '2024-09-10',
+          eventAchievements: 'Created 200 eco-friendly Ganesha idols, educated 500+ participants on the benefits of eco-friendly celebrations.',
+          driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
+          placesVisited: 'Local schools and communities in the city.',
+          images: [
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976929/20240906_131341_dm4zya.jpg',
+              alt: 'Eco-friendly Ganesha making workshop',
+              description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976924/20240906_131331_u20lbd.jpg',
+              alt: 'Eco-friendly Ganesha making workshop',
+              description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976923/20240906_131038_vqingi.jpg',
+              alt: 'Eco-friendly Ganesha making workshop',
+              description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976920/20240906_131022_ei5f17.jpg',
+              alt: 'Eco-friendly Ganesha making workshop',
+              description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976916/20240906_10905pmByGPSMapCamera_-_Copy_-_Copy_bbueqs.jpg',
+              alt: 'Eco-friendly Ganesha making workshop',
+              description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976916/20240906_10905pmByGPSMapCamera_-_Copy_kmaofb.jpg',
+              alt: 'Eco-friendly Ganesha making workshop',
+              description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+            }
+          ],
+          videos: [
+            {
+              url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+              alt: 'Event highlight video',
+              description: 'Highlight video showcasing the making of clay Ganesha idols and public awareness efforts.'
+            }
+          ]
+        },
+        {
+          name: 'Blood Donation Camp',
+          description: 'Encourage students and local citizens to donate blood and save lives.',
+          heroImage: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988955/Hero_qq2ifc.jpg',
+          dateStarted: '2024-08-15',
+          dateEnded: '2024-08-15',
+          eventAchievements: 'Collected 600 blood units, contributed to local hospitals.',
+          driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
+          placesVisited: 'College campus',
+          images: [
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988772/Snapchat-1577214039_j6muw0.jpg',
+              alt: 'Blood Donation Setup',
+              description: 'Volunteers setting up the blood donation area.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988771/Snapchat-1478453225_mgxsnr.jpg',
+              alt: 'Blood Donation Setup',
+              description: 'Volunteers setting up the blood donation area.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988770/Snapchat-1235526245_zlvkaj.jpg',
+              alt: 'Blood Donation Setup',
+              description: 'Volunteers setting up the blood donation area.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+              alt: 'Blood Donation Setup',
+              description: 'Volunteers setting up the blood donation area.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+              alt: 'Blood Donation Setup',
+              description: 'Volunteers setting up the blood donation area.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+              alt: 'Blood Donation Setup',
+              description: 'Volunteers setting up the blood donation area.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988763/Snapchat-355862009_nbw9fg.jpg',
+              alt: 'Blood Donation Setup',
+              description: 'Volunteers setting up the blood donation area.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988764/Snapchat-376460287_edgxbc.jpg',
+              alt: 'Blood Donation Setup',
+              description: 'Volunteers setting up the blood donation area.'
+            }
+          ],
+          videos: [
+            {
+              url: 'https://www.youtube.com/watch?v=bLOaJeS7YdE',
+              alt: 'Blood Donation Camp Video',
+              description: 'A short video documenting the camp’s proceedings and interviews.'
+            }
+          ]
+        },
+        {
+          name: 'Seed Ball event',
+          description: 'A plantation drive to improve greenery and reduce pollution.',
+          heroImage: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725989996/Hero_upqydy.jpg',
+          dateStarted: '2024-04-22',
+          dateEnded: '2024-04-23',
+          eventAchievements: 'more than 500 seed balls were distributed.',
+          driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
+          placesVisited: 'Parks, schools, and rural areas',
+          images: [
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988359/IMG_5811_bm4yhe.jpg',
+              alt: 'Tree plantation drive',
+              description: 'Volunteers planting saplings in various locations.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988360/IMG_5808_ahttvn.jpg',
+              alt: 'Tree plantation drive',
+              description: 'Volunteers planting saplings in various locations.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988360/IMG_5808_ahttvn.jpg',
+              alt: 'Tree plantation drive',
+              description: 'Volunteers planting saplings in various locations.'
+            },
+            {
+              url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988362/IMG_5818_arkqsb.jpg',
+              alt: 'Tree plantation drive',
+              description: 'Volunteers planting saplings in various locations.'
+            }
+          ],
+          videos: [
+            {
+              url: 'https://www.youtube.com/watch?v=drVN9V23reE',
+              alt: 'Plantation Drive Event',
+              description: 'A video documenting the plantation drive and community involvement.'
+            }
+          ]
+        }
+      ]
+},
+{
+  year:"2021",
+  eventsConducted:"3",
+  events : [
+      {
+        name: 'Clay Ganesha',
+        description: 'Promote eco-friendly Ganesha to improve environmental conditions by using clay idols that dissolve in water without polluting it.',
+        heroImage: 'https://ecofriendlyganeshaidols.com/wp-content/uploads/2020/03/CLAY-GANESHA-AG7028.jpg',
+        dateStarted: '2024-09-01',
+        dateEnded: '2024-09-10',
+        eventAchievements: 'Created 200 eco-friendly Ganesha idols, educated 500+ participants on the benefits of eco-friendly celebrations.',
+        driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
+        placesVisited: 'Local schools and communities in the city.',
+        images: [
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976929/20240906_131341_dm4zya.jpg',
+            alt: 'Eco-friendly Ganesha making workshop',
+            description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976924/20240906_131331_u20lbd.jpg',
+            alt: 'Eco-friendly Ganesha making workshop',
+            description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976923/20240906_131038_vqingi.jpg',
+            alt: 'Eco-friendly Ganesha making workshop',
+            description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976920/20240906_131022_ei5f17.jpg',
+            alt: 'Eco-friendly Ganesha making workshop',
+            description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976916/20240906_10905pmByGPSMapCamera_-_Copy_-_Copy_bbueqs.jpg',
+            alt: 'Eco-friendly Ganesha making workshop',
+            description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725976916/20240906_10905pmByGPSMapCamera_-_Copy_kmaofb.jpg',
+            alt: 'Eco-friendly Ganesha making workshop',
+            description: 'Participants learning to make eco-friendly clay Ganesha idols.'
+          }
+        ],
+        videos: [
+          {
+            url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            alt: 'Event highlight video',
+            description: 'Highlight video showcasing the making of clay Ganesha idols and public awareness efforts.'
+          }
+        ]
+      },
+      {
+        name: 'Blood Donation Camp',
+        description: 'Encourage students and local citizens to donate blood and save lives.',
+        heroImage: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988955/Hero_qq2ifc.jpg',
+        dateStarted: '2024-08-15',
+        dateEnded: '2024-08-15',
+        eventAchievements: 'Collected 600 blood units, contributed to local hospitals.',
+        driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
+        placesVisited: 'College campus',
+        images: [
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988772/Snapchat-1577214039_j6muw0.jpg',
+            alt: 'Blood Donation Setup',
+            description: 'Volunteers setting up the blood donation area.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988771/Snapchat-1478453225_mgxsnr.jpg',
+            alt: 'Blood Donation Setup',
+            description: 'Volunteers setting up the blood donation area.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988770/Snapchat-1235526245_zlvkaj.jpg',
+            alt: 'Blood Donation Setup',
+            description: 'Volunteers setting up the blood donation area.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+            alt: 'Blood Donation Setup',
+            description: 'Volunteers setting up the blood donation area.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+            alt: 'Blood Donation Setup',
+            description: 'Volunteers setting up the blood donation area.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988767/Snapchat-696579375_wvc6qr.jpg',
+            alt: 'Blood Donation Setup',
+            description: 'Volunteers setting up the blood donation area.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988763/Snapchat-355862009_nbw9fg.jpg',
+            alt: 'Blood Donation Setup',
+            description: 'Volunteers setting up the blood donation area.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988764/Snapchat-376460287_edgxbc.jpg',
+            alt: 'Blood Donation Setup',
+            description: 'Volunteers setting up the blood donation area.'
+          }
+        ],
+        videos: [
+          {
+            url: 'https://www.youtube.com/watch?v=bLOaJeS7YdE',
+            alt: 'Blood Donation Camp Video',
+            description: 'A short video documenting the camp’s proceedings and interviews.'
+          }
+        ]
+      },
+      {
+        name: 'Seed Ball event',
+        description: 'A plantation drive to improve greenery and reduce pollution.',
+        heroImage: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725989996/Hero_upqydy.jpg',
+        dateStarted: '2024-04-22',
+        dateEnded: '2024-04-23',
+        eventAchievements: 'more than 500 seed balls were distributed.',
+        driveLink: 'https://drive.google.com/drive/folders/1nKUYJsD1N6_LtR5q_DJyWVDCqegC3Pjk',
+        placesVisited: 'Parks, schools, and rural areas',
+        images: [
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988359/IMG_5811_bm4yhe.jpg',
+            alt: 'Tree plantation drive',
+            description: 'Volunteers planting saplings in various locations.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988360/IMG_5808_ahttvn.jpg',
+            alt: 'Tree plantation drive',
+            description: 'Volunteers planting saplings in various locations.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988360/IMG_5808_ahttvn.jpg',
+            alt: 'Tree plantation drive',
+            description: 'Volunteers planting saplings in various locations.'
+          },
+          {
+            url: 'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725988362/IMG_5818_arkqsb.jpg',
+            alt: 'Tree plantation drive',
+            description: 'Volunteers planting saplings in various locations.'
+          }
+        ],
+        videos: [
+          {
+            url: 'https://www.youtube.com/watch?v=drVN9V23reE',
+            alt: 'Plantation Drive Event',
+            description: 'A video documenting the plantation drive and community involvement.'
+          }
+        ]
+      }
+    ]
+}
 ]
 
 export const teamNSS = [

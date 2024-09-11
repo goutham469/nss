@@ -1,37 +1,96 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { detailedEvents } from '../Constants'
+import './YearEvent.css'
+import { IoMdClose } from "react-icons/io";
 
+
+function Image({image})
+{
+    const [click,handleClick] = useState(false);
+
+    const fullScreenStyles = {
+        position: "fixed",
+        top: 20,
+        left: 20,
+        width: "80vw",
+        height: "90vh",
+        zIndex: 1000,
+        backgroundColor:"black",
+        display:"flex",
+        justifyContent:"space-around",
+        padding:"10px"
+      };
+     
+    return <div style={{width:"300px",height:"300px",border:"2px solid gold",borderRadius:"10px",margin:"5px"}}>
+                {
+                    click?
+                    <div style={fullScreenStyles}>
+                        <div>
+                            <IoMdClose color='white' size={40}
+                            onClick={()=>handleClick(false)}
+                            />
+                            <br/>
+                            <img 
+                            onClick={()=>handleClick(false)}
+                            style={{height:"80vh"}}
+                            src={image.url}
+                            />
+                            <br/>
+                            <label>{image.description}</label>
+                        </div>
+                    </div>
+                    :
+                    <img 
+                    width="300px" 
+                    height="300px" 
+                    style={{borderRadius:"8px"}} 
+                    src={image.url} 
+                    alt={image.alt}
+                    onClick={()=>handleClick(true)}
+                    />
+                }
+            </div>
+}
 
 function CompleteEvent({event})
 {
-    return <div style={{backgroundColor:"#454545",margin:"10px",padding:"10px",borderRadius:"10px",color:"white"}}>
-                <div style={{display:"flex",justifyContent:"space-around",maxWidth:"800px"}}>
-                    <img src={event.heroImage} alt='image'/>
-                    <div>
+    const styles = {
+        "mainBox":{backgroundColor:"#454545",margin:"5px",padding:"10px",borderRadius:"10px",color:"white"},
+        "card1":{width:"300px",backgroundColor:"#272626",padding:"8px",borderRadius:"5px",margin:"5px"}
+    }
+    return <div style={styles.mainBox}>
+                <div style={{display:"flex",justifyContent:"space-around",alignItems:"center",maxWidth:"1000px",flexWrap:"wrap"}}>
+                    <img src={event.heroImage} alt='image' style={{width:"250px",height:"250px",borderRadius:"150px"}}/>
+                    <div style={styles.card1}>
                         <b style={{color:"gold"}}>{event.name}</b>
                         <br/>
-                        <p style={{width:"200px",backgroundColor:"black",padding:"3px",borderRadius:"5px",marginTop:"5px"}}>{event.description}</p>
+                        <p>{event.description}</p>
                         <br/>
-                        <label>started on : {event.dateStarted}</label>
+                        <label>Started on :- {event.dateStarted}</label>
                         <br/>
-                        <label>ended on : {event.dateEnded}</label><br/>
+                        <label>Ended on :-  {event.dateEnded}</label><br/><br/>
                         <label>places visited : {event.placesVisited}</label>
-                        <div style={{width:"200px",backgroundColor:"black",padding:"3px",borderRadius:"5px",marginTop:"5px"}}>
-                            <b>event achievements</b>
+                        <br/><br/>
+                        <div>
+                            <b style={{color:"gold"}}>event achievements</b>
                             <p>{event.eventAchievements}</p>
                         </div>
-                        <a href={`${event.driveLink}`}>drive link</a>
+                        <br/>
+                        <center>
+                            <a href={`${event.driveLink}`} style={{color:"white"}}>drive link</a>
+                        </center>
                     </div>
                 </div>
+                <br/>
+                <br/>
                 <div>
-                    <h3>Images</h3>
-                    <div style={{display:"flex",justifyContent:"space-around"}}>
+                    <center>
+                        <h2 style={{color:"gold"}}>Images</h2>
+                    </center>
+                    <br/>
+                    <div style={{display:"flex",justifyContent:"space-around",flexWrap:"wrap"}}>
                         {
-                            event.images.map(image=><div style={{width:"300px",height:"400px",border:"1px solid white"}}>
-                                <img width="300px" src={image.url} alt={image.alt}/>
-                                <br/>
-                                <label>{image.description}</label>
-                            </div>)
+                            event.images.map(image=><Image image={image}/>)
                         }
                     </div>
                 </div>
@@ -49,18 +108,24 @@ function YearEvent({year}) {
     <div>
         {
             detailedEvents.filter(x=>check(x.year)).map(data=><div style={{padding:"20px"}}>
-                <div>
-                    <b>year : {data.year}</b>
-                    <br/>
-                    <b>events conducted : {data.eventsConducted}</b>
-                </div>
-                <div>
-                    <h3>events</h3>
+                <center>
+                    <div>
+                        <b style={{color:"red",fontSize:"24px"}}>year : {data.year}</b>
+                        <br/>
+                        <b style={{color:"pink"}}>events conducted : {data.eventsConducted}</b>
+                    </div>
+                </center>
+                <div className='YearEvent-all-events'>
                     {
                         data.events.map(event=><CompleteEvent event={event}/>)
                     }
                 </div>
             </div>)
+        }
+        {
+            detailedEvents.filter(x=>check(x.year)).length == 0 && <div>
+                <b style={{fontSize:"40px"}}>for the year {year}, Data is not updated.</b>
+            </div>
         }
     </div>
   )

@@ -1,0 +1,35 @@
+.all-volunteers-table{
+    width: 100vw;
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+.all-volunteers-table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  
+.all-volunteers-table-head{
+    border: 2px solid rgb(253, 253, 253);
+    color: gold;
+}
+/* .all-volunteers-table-head-data{
+    width: 200px;
+    background-color: aliceblue;
+} */
+
+td,th{
+    border: 1px solid white;
+    padding: 5px;
+    width: "200px";
+}
+table{
+    border-collapse: collapse;
+}
+
+.all-volunteers-table td,
+.all-volunteers-table th {
+  width: 150px;
+  word-wrap: break-word;
+  text-align: center;
+}

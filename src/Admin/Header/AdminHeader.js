@@ -9,16 +9,17 @@ function AdminHeader() {
   return (
     <div style={{display:"flex",justifyContent:"space-around"}} className='admin-header'>
         <div onClick={()=>naviagte('/admin')}>
-            <img style={{width:"100px"}} src={Images.nssLogo}/>
+            <img style={{width:"50px"}} src={Images.nssLogo}/>
         </div>
         <div style={{display:"flex",justifyContent:"space-around",padding:"10px"}}>
-            <b className='admin-header-item'>events</b>
-            <b className='admin-header-item'>Volunteers</b>
-            <b className='admin-header-item'>Alumini</b>
-            <b className='admin-header-item'>Post event</b>
-            <b className='admin-header-item'>update website</b>
-            <b className='admin-header-item'>add event details</b>
-            <b className='admin-header-item'>create Form</b>
+            <b className='admin-header-item' onClick={()=>naviagte("./events")}>events</b>
+            <b className='admin-header-item' onClick={()=>naviagte("./all-volunteers")}>Volunteers</b>
+            <b className='admin-header-item' onClick={()=>naviagte("./alumini")}>Alumini</b>
+            <b className='admin-header-item' onClick={()=>naviagte("./publish-event-details")}>Post event</b>
+            <b className='admin-header-item' onClick={()=>naviagte("./update-website")}>update website</b>
+            <b className='admin-header-item' onClick={()=>naviagte("./add-event-details")}>add event details</b>
+            <b className='admin-header-item' onClick={()=>naviagte("./create-form")}>create Form</b>
+            <b className='admin-header-item' onClick={()=>naviagte("./domains")}>Domains</b>
         </div>
     </div>
   )

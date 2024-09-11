@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Footer.css'
 import Images from '../Media';
 import { FaInstagram,FaFacebookF,FaYoutube,FaTwitter,FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
     const [hovered,setHovered] = useState(false);
+    const [counts,setCounts] = useState({})
+
+    useEffect(()=>{
+        fetch(`${process.env.REACT_APP_SERVER_BASE_URL}/websitedata/get-data`)
+        .then(data=>data.json())
+        .then(data=>setCounts(prevData=>({...prevData,apiCalls:data.apiCalls,totalViews:data.totalViews})))
+        .catch(err=>{console.log("No internet connection !")})
+    },[])
 
     return (
         <div style={{ display: "flex", justifyContent: "space-around",padding:"10px", flexWrap: "wrap" ,backgroundColor:"black",paddingBottom:"30px"}}>
@@ -90,6 +98,14 @@ function Footer() {
                 <p style={{borderBottom:"1px solid yellow",width:"fit-content",marginBottom:"20px"}}>Contact Us</p>
                 <label>nss@vnrvjiet.ac.in</label><br />
                 <label>+91 9876543210</label>
+                <br/>
+                <br/>
+                <div>
+                    <center><b>metrics</b></center>
+                    <label>total views : {counts&&counts.totalViews}</label>
+                    <br/>
+                    <label>API calls : {counts&&counts.apiCalls}</label>
+                </div>
             </div>
         </div>
     );

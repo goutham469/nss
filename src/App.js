@@ -11,6 +11,13 @@ import Team from './components/Team/Team';
 import YearEvent from './components/YearEvent/YearEvent';
 import YearTeam from './components/Team/YearTeam';
 import Gallery from './components/Gallery/Gallery';
+import AllVolunteers from './Admin/AllVolunteers/AllVolunteers';
+import CreateForm from './Admin/CreateForm/CreateForm';
+import PostEvent from './Admin/PostEvent/PostEvent';
+import Alumini from './Admin/Alumini/Alumini';
+import UpdateWebsite from './Admin/UpdateWebsite/UpdateWebsite';
+import AllEvents from './Admin/AllEvents/AllEvents';
+import { useEffect } from 'react';
 
 function App() {
   const router = createBrowserRouter([
@@ -106,9 +113,53 @@ function App() {
     },
     {
       path:'admin',
-      element:<AdminMain/>
+      element:<AdminMain/>,
+      children:[
+        {
+          path:'',
+          element:<h1>Admin Dashboard</h1>
+        },
+        {
+          path:'all-volunteers',
+          element:<AllVolunteers/>
+        },
+        {
+          path:'create-form',
+          element:<CreateForm/>
+        },
+        {
+          path:'publish-event-details',
+          element:<PostEvent/>
+        },
+        {
+          path:'alumini',
+          element:<Alumini/>
+        },
+        {
+          path:'update-website',
+          element:<UpdateWebsite/>
+        },
+        {
+          path:'events',
+          element:<AllEvents/>
+        }
+      ]
+    },
+    {
+      path:'*',
+      element:<h1>Its Error, 404 PATH NOT FOUND !</h1>
     }
   ])
+  useEffect(()=>{
+    try
+    {
+      fetch(`${process.env.REACT_APP_SERVER_BASE_URL}/initialLoad`).then(data=>data.json()).then(data=>console.log(data))
+    }
+    catch(err)
+    {
+      alert("Unable to Load! \nNo Internet connection")
+    }
+  },[])
   return (
     <div className="App">
       <RouterProvider router={router}/>

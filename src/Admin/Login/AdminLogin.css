@@ -1,0 +1,8 @@
+.admin-login{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    margin: 200px;
+    padding: 30px;
+    width: fit-content;
+}

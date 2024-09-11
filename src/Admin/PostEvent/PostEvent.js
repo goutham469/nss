@@ -2,7 +2,7 @@ import React from 'react'
 
 function PostEvent() {
   return (
-    <div>PostEvent</div>
+    <div>post new event details</div>
   )
 }
 
