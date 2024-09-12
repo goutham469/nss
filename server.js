@@ -49,4 +49,4 @@ app.use('/volunteers',volunteersAPI)
 app.use('/admin',adminAPI)
 app.use('/websiteData',websiteAPI)
 
-app.listen(4000,()=>console.log("server running on PORT 4000"))
+app.listen(80,()=>console.log("server running on PORT 80"))
