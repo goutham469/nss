@@ -8,7 +8,7 @@ import EventMini from '../EventMini/EventMini'
 
 function HeroTextBars({data})
 {
-    return <div style={{backgroundImage:`url(${Images.HeroBG})`}} className='hero-text-bars' >
+    return <div style={{backgroundColor:"black",fontFamily:"cursive"}} className='hero-text-bars' >
                 <b>{data.question}</b><br/>
                 <p>{data.answer}</p>
             </div>
@@ -19,12 +19,15 @@ function Description() {
   return (
     <div style={{textAlign:"center"}}>
         <ImagesBar/>
-        <center>
-            {
-                HeroTextBarsData.map(data=><HeroTextBars data={data}/>)
-            }
-        </center>
-        <center>
+        <div id='about' style={{paddingTop:"10vh"}}>
+            <center>
+                <b style={{fontSize:"30px"}}>About</b>
+                {
+                    HeroTextBarsData.map(data=><HeroTextBars data={data}/>)
+                }
+            </center>
+        </div>
+        <center id='reach' style={{paddingTop:"10vh"}}>
             <b style={{fontSize:"30px"}}>Our Reach</b>
             <div style={{display:"flex",justifyContent:"space-between",maxWidth:"600px",flexWrap:"wrap",border:"5px solid white",borderRadius:"10px",padding:"20px"}}>
                 {
@@ -34,7 +37,7 @@ function Description() {
         </center>
         <br/>
         <br/>
-        <center>
+        <center id='events'style={{paddingTop:"10vh"}}>
             <b style={{fontSize:"30px"}}>events</b>
             <div style={{display:"flex",justifyContent:"space-around",flexWrap:"wrap"}}>
                 {

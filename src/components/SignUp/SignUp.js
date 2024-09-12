@@ -3,7 +3,7 @@ import { jwtDecode } from 'jwt-decode'
 import React, { useState } from 'react'
 
 function SignUp() {
-  const [verified,setVerified] = useState(2)
+  const [verified,setVerified] = useState(0)
   const [password,setPassword] = useState()
   async function createAccount(event)
   {
@@ -31,11 +31,12 @@ function SignUp() {
         {
           verified==0?
           <div>
-            <b style={{color:"blue"}}>NSS-Volunteer<br/>Sign up</b>
+            <b style={{color:"blue"}}>NSS-Volunteer : Sign up</b>
             <br/>
-            <br/>
+            <center>step : 1/5</center>
             <br/>
             <label>use your college email-id</label>
+            <br/>
             <br/>
             <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_AUTH_CLIENT_ID}>
               <GoogleLogin
@@ -55,7 +56,7 @@ function SignUp() {
             onChange={(event)=>setPassword(event.target.value)}
             />
             <br/>
-            <button onClick={(event)=>createAccount(event)}>Finish.</button>
+            <button onClick={(event)=>createAccount(event)}>Next</button>
           </div>
           :
           <div>

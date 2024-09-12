@@ -2,7 +2,7 @@ import React from 'react'
 
 function PostEvent() {
   return (
-    <div>post new event details</div>
+    <div>send e-mail's to all about,  new event details</div>
   )
 }
 

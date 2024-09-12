@@ -20,6 +20,7 @@ function AdminHeader() {
             <b className='admin-header-item' onClick={()=>naviagte("./add-event-details")}>add event details</b>
             <b className='admin-header-item' onClick={()=>naviagte("./create-form")}>create Form</b>
             <b className='admin-header-item' onClick={()=>naviagte("./domains")}>Domains</b>
+            <b className='admin-header-item' onClick={()=>naviagte("./Attendence")}>Attendence</b>
         </div>
     </div>
   )

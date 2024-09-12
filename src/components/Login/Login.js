@@ -19,6 +19,27 @@ function Login() {
     {
       let data = jwtDecode(response.credential)
       console.log(data.email)
+
+      fetch(`${process.env.REACT_APP_SERVER_BASE_URL}/volunteers/volunteer-login`,{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify(
+          {
+            loginType:"OAuth",
+            email:data.email
+          }
+        )
+      }).then(data=>data.json())
+      .then(data=>{
+        console.log(data)
+        if(data.message == "success")
+        {
+          alert("login success")
+          localStorage.setItem('volunteerLogin',true)
+        }
+        else{alert("invalid credentials !")}
+      })
+      .catch(err=>{alert("No internet connection!")})
     }
 
     function checkForm()
@@ -54,7 +75,28 @@ function Login() {
       event.preventDefault();
       if(checkForm())
       {
-        // fetch the server
+        fetch(`${process.env.REACT_APP_SERVER_BASE_URL}/volunteers/volunteer-login`,{
+          method:"POST",
+          headers:{"Content-Type":"application/json"},
+          body:JSON.stringify(
+            {
+              loginType:"password",
+              roolNo:formData.roolNo,
+              password:formData.password
+            }
+          )
+        }).then(data=>data.json())
+        .then(data=>{
+          if(data.message == "success")
+          {
+            alert("login success")
+            localStorage.setItem('volunteerLogin',true)
+            localStorage.setItem("rollNo",formData.roolNo)
+            navigate('/volunteer')
+          }
+          else{alert("invalid credentials !")}
+        })
+        .catch(err=>{alert("No internet connection!")})
       }
     }
   return (
@@ -63,7 +105,7 @@ function Login() {
         <center>
           <b style={{fontSize:"32px"}}>NSS-Volunteer <br/>login</b><br/>
         </center>
-        <form>
+        <form style={{textAlign:"center"}} onSubmit={(event)=>loginToServer(event)}>
             <label style={{color:formData.roolNoColor?"red":"black"}} className='volunteer-login-rool-no-label'>{formData.roolNoError}</label><br/>
             <input 
             type='text' 

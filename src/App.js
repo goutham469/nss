@@ -18,26 +18,21 @@ import Alumini from './Admin/Alumini/Alumini';
 import UpdateWebsite from './Admin/UpdateWebsite/UpdateWebsite';
 import AllEvents from './Admin/AllEvents/AllEvents';
 import { useEffect } from 'react';
+import Attendence from './Admin/Attendence/Attendence';
 
 function App() {
   const router = createBrowserRouter([
     {
       path:'',
-      element:<Main/>,
-      children:[
-        {
-          path:'',
-          element:<Description/>
-        },
-        {
-          path:'volunteer-login',
-          element:<Login/>
-        },
-        {
-          path:'sign-up',
-          element:<SignUp/>
-        }
-      ]
+      element:<Main/>
+    },
+    {
+      path:'volunteer-login',
+      element:<Login/>
+    },
+    {
+      path:'sign-up',
+      element:<SignUp/>
     },
     {
       path:'events',
@@ -142,6 +137,10 @@ function App() {
         {
           path:'events',
           element:<AllEvents/>
+        },
+        {
+          path:'Attendence',
+          element:<Attendence/>
         }
       ]
     },
@@ -153,7 +152,7 @@ function App() {
   useEffect(()=>{
     try
     {
-      fetch(`${process.env.REACT_APP_SERVER_BASE_URL}/initialLoad`).then(data=>data.json()).then(data=>console.log(data))
+      fetch(`${process.env.REACT_APP_SERVER_BASE_URL}/initialLoad`).then(data=>data.json()).then(data=>console.log(data)).catch(err=>console.log("no internet connection"))
     }
     catch(err)
     {

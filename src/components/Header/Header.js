@@ -9,19 +9,30 @@ import { AiOutlineClose } from "react-icons/ai";
 function DeskTopView()
 {
     const naviagte = useNavigate()
+    function handleClick(id)
+    {
+        const element = document.getElementById(id)
+        if(element)
+        {
+            element.scrollIntoView({behavior:"smooth"})
+        }
+    }
     return <div className='desktop-header-navbar'>
                 <div onClick={()=>naviagte('/')}>
                     <img style={{width:"80px"}} src={Images.nssLogo}/>
                 </div>
                 <div className='desktop-header-navbar-2'>
-                    <div className='desktop-header-nav-items'>
+                    <div className='desktop-header-nav-items' onClick={()=>handleClick('about')}>
                         <b>ABOUT</b>
                     </div>
-                    <div className='desktop-header-nav-items'>
-                        <b onClick={()=>naviagte("/events")}>EVENTS</b>
+                    <div className='desktop-header-nav-items' onClick={()=>handleClick('reach')}>
+                        <b>REACH</b>
                     </div>
                     <div className='desktop-header-nav-items'>
-                        <b onClick={()=>naviagte("/team")}>TEAM</b>
+                        <b onClick={()=>handleClick('events')}>EVENTS</b>
+                    </div>
+                    <div className='desktop-header-nav-items'>
+                        <b onClick={()=>naviagte("/team")} >TEAM</b>
                     </div>
                     <div className='desktop-header-nav-items'>
                         <b onClick={()=>naviagte("/gallery")}>GALLERY</b>
