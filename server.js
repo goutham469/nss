@@ -3,6 +3,7 @@ const app = exp()
 const mongo = require('mongodb').MongoClient
 require('dotenv').config()
 const cors = require('cors')
+const path = require('path')
 
 const volunteersAPI = require('./APIs/volunteersAPI')
 const adminAPI = require('./APIs/adminAPI')
@@ -39,14 +40,20 @@ mongo.connect(process.env.MONGODB_CONNECTION_URL).then(client=>{
 app.use(DBAccess)
 app.use(APICallCounter)
 
-app.get('/',(req,res)=>{
-    res.send("<h1>NSS - VNR VJIET , Server !</h1>")
-})
+app.use(exp.static(path.join(__dirname,'build')))
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './build' , "index.html"));
+});
 
 app.get('/initialLoad',ReactCounter)
 
 app.use('/volunteers',volunteersAPI)
 app.use('/admin',adminAPI)
 app.use('/websiteData',websiteAPI)
+
+app.use('*',(req,res)=>{
+    res.sendFile(path.join(__dirname, './build' , "index.html"));
+})
 
 app.listen(80,()=>console.log("server running on PORT 80"))
