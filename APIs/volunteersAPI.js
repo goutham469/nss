@@ -162,6 +162,16 @@ volunteersAPI.post('/update-volunteer-details', DBAccess, async (req, res) => {
     res.send({ "message": "updated" });
 });
 
+volunteersAPI.get('/get-volunteer-details',DBAccess,async(req,res)=>{
+    let data = await req.volunteers.find({roolNo:req.query.rollNo}).toArray()
+    if(data&&data.length > 0)
+    {
+        res.send(data[0])
+    }
+    else{
+        res.send({"status":false})
+    }
+})
 
 volunteersAPI.get('/all',(req,res)=>{
     res.send("hi")

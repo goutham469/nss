@@ -56,4 +56,4 @@ app.use('*',(req,res)=>{
     res.sendFile(path.join(__dirname, './build' , "index.html"));
 })
 
-app.listen(80,()=>console.log("server running on PORT 80"))
+app.listen(4000,()=>console.log("server running on PORT 4000"))

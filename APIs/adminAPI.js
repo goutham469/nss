@@ -17,7 +17,7 @@ adminAPI.get('/all-roolsList',DBAccess,async(req,res)=>{
 })
 
 adminAPI.post('/add-rollNo',DBAccess,async(req,res)=>{
-    let preresponse = await req.roolsList.find({roolNo:req.body.roolNo}).toArray();
+    let preresponse = await req.roolsList.find({rollNo:req.body.rollNo}).toArray();
     if(preresponse.length == 0)
     {
         let response = await req.roolsList.insertOne(req.body)
@@ -27,6 +27,11 @@ adminAPI.post('/add-rollNo',DBAccess,async(req,res)=>{
     {
         res.send({"message":"roolNo already exists"})
     }
+})
+
+adminAPI.post('/delete-rollNo',DBAccess,async(req,res)=>{
+    let response = await req.roolsList.deleteOne({rollNo:req.body.rollNo})
+    res.send(response)
 })
 
 adminAPI.get('/get-main-attendence',DBAccess,async(req,res)=>{
