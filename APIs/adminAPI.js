@@ -34,6 +34,11 @@ adminAPI.post('/delete-rollNo',DBAccess,async(req,res)=>{
     res.send(response)
 })
 
+adminAPI.post('/delete-volunteer-account',DBAccess,async(req,res)=>{
+    let response = await req.volunteers.deleteOne({rollNo:req.body.rollNo})
+    res.send(response)
+})
+
 adminAPI.get('/get-main-attendence',DBAccess,async(req,res)=>{
     let response = await req.websiteData.find({key:"1"}).toArray()
     response = response[0]

@@ -7,7 +7,7 @@ volunteersAPI.get('/',(req,res)=>{
 })
 
 volunteersAPI.post('/signup-check-roolno',async(req,res)=>{
-    let roolsList = await req.roolsList.find({"roolNo":req.body.roolNo}).toArray()
+    let roolsList = await req.roolsList.find({"rollNo":req.body.rollNo}).toArray()
     if(roolsList && roolsList.length == 0)
     {
         res.send({"message":"not exists"})
@@ -19,10 +19,10 @@ volunteersAPI.post('/signup-check-roolno',async(req,res)=>{
 })
 
 volunteersAPI.post('/add-volunteer-rool-no',DBAccess,async(req,res)=>{
-    let preResponse = await req.roolsList.find({"roolNo":req.body.roolNo}).toArray()
+    let preResponse = await req.roolsList.find({"rollNo":req.body.roolNo}).toArray()
     if(preResponse.length == 0)
     {
-        let response = await req.roolsList.insertOne({"roolNo":req.body.roolNo,"domain":req.body.domain})
+        let response = await req.roolsList.insertOne({"rollNo":req.body.roolNo,"domain":req.body.domain})
         res.send({"message":"roolNoInserted"})
     }
     else
@@ -33,13 +33,14 @@ volunteersAPI.post('/add-volunteer-rool-no',DBAccess,async(req,res)=>{
 
 volunteersAPI.post('/create-volunteer-account',DBAccess,async(req,res)=>{
     console.log(req.body)
-    let response1 = await req.volunteers.find({"roolNo":req.body.roolNo}).toArray()
+    let response1 = await req.volunteers.find({"rollNo":req.body.rollNo}).toArray()
     if(response1.length == 0)
     {
-        let roolsList = await req.roolsList.find({"roolNo":req.body.roolNo}).toArray()
+        let roolsList = await req.roolsList.find({"rollNo":req.body.rollNo}).toArray()
         roolsList = roolsList[0];
         let data = req.body
         data.domain = roolsList.domain
+        data.year = roolsList.year
         await req.volunteers.insertOne(data)
         res.send({"message":"new user created"})
     }
@@ -55,8 +56,8 @@ volunteersAPI.post('/volunteer-login',DBAccess,async(req,res)=>{
         let response = await req.volunteers.find({alternateEmail:req.body.email}).toArray();
         if(response.length == 0)
         {
-            const roolNo = req.body.email.substring(0,10)
-            let response = await req.volunteers.find({roolNo:roolNo}).toArray();
+            const rollNo = req.body.email.substring(0,10)
+            let response = await req.volunteers.find({rollNo:rollNo}).toArray();
             if(response.length == 0)
             {
                 res.send({"message":"email not registered"})
@@ -73,7 +74,7 @@ volunteersAPI.post('/volunteer-login',DBAccess,async(req,res)=>{
     }
     else
     {
-        let response = await req.volunteers.find({roolNo:req.body.roolNo}).toArray();
+        let response = await req.volunteers.find({rollNo:req.body.rollNo}).toArray();
         if(response.length == 0)
         {
             res.send({"message":"rool no not found"})
@@ -96,7 +97,7 @@ volunteersAPI.post('/volunteer-login',DBAccess,async(req,res)=>{
 volunteersAPI.post('/update-volunteer-details', DBAccess, async (req, res) => {
     console.log(req.body);
     let query = {};
-    let response = await req.volunteers.find({ roolNo: req.body.roolNo }).toArray();
+    let response = await req.volunteers.find({ rollNo: req.body.rollNo }).toArray();
 
     if (response.length == 0) {
         return res.send({ "message": "user not found" });
@@ -163,7 +164,7 @@ volunteersAPI.post('/update-volunteer-details', DBAccess, async (req, res) => {
 });
 
 volunteersAPI.get('/get-volunteer-details',DBAccess,async(req,res)=>{
-    let data = await req.volunteers.find({roolNo:req.query.rollNo}).toArray()
+    let data = await req.volunteers.find({rollNo:req.query.rollNo}).toArray()
     if(data&&data.length > 0)
     {
         res.send(data[0])
