@@ -81,7 +81,7 @@ function Login() {
           body:JSON.stringify(
             {
               loginType:"password",
-              roolNo:formData.roolNo,
+              rollNo:formData.roolNo,
               password:formData.password
             }
           )

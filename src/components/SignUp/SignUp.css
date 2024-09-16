@@ -1,0 +1,23 @@
+.social-media-input-signup-volunteer{
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    padding-bottom: 0px;
+    font-size: 16px;
+}
+/* .social-media-input-signup-volunteer:hover{
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+.social-media-input-signup-volunteer:focus{
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid rgb(255, 0, 0);
+} */
+ .social-media-icon-signup-volunteer{
+    position: relative;
+    top: 10px;
+    right: 5px;
+ }

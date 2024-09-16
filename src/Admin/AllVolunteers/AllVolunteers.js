@@ -75,27 +75,43 @@ function VolunteerCard({data,index,mainAttendence})
     }
     return "Na";
   }
+  function deleteAccount(event)
+  {
+    event.preventDefault();
+    let rollNo = prompt("enter the volunteer roll no : ")
+    if(rollNo == data.rollNo)
+    {
+      fetch(`${process.env.REACT_APP_SERVER_BASE_URL}/admin/delete-volunteer-account`,{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({rollNo:data.rollNo})
+      }).then(data=>data.json())
+      .then(data=>console.log(data))
+    }
+    else{alert("deletion failed !")}
+    
+  }
   return <tr>
           <td>{index}.</td>
           <td>
             {
               data.profilePicture ?
-              <img src={data.profilePicture} alt='no' width="70px" height="70px" style={{borderRadius:"10px"}}/>
+              <img src={data.profilePicture} alt='no' width="70px" height="50px" style={{borderRadius:"10px"}}/>
               :
-              <IoPersonCircleOutline size={60} />
+              <IoPersonCircleOutline size={40} />
             }
           </td>
           <td>{data.name}</td>
-          <td>{data.roolNo}</td>
+          <td>{data.rollNo}</td>
           <td>{data.year}</td>
           <td>{calculateEventAttendence(data.attendenceEvents)}</td>
           <td>{calculateMeetingsAttendence(data.attendenceMeetings)}</td>
           <td>{data.domain}</td>
           <td>{data.branch?data.branch:"-"}</td>
           <td>{data.section?data.section:'-'}</td>
-          <td>{data.roolNo}@vnrvjiet.in</td>
+          <td>{data.rollNo}@vnrvjiet.in</td>
           <td>{data.alternateEmail}</td>
-          <td>{data.acCreatedOn}</td>
+          <td>{data.acCreatedOn.substring(0,10)}</td>
           <td>{data.dateOfBirth}</td>
           <td>{data.phone.map((phone,index)=><p>{index+1} . {phone}</p>)}</td>
           <td>{data.socialProfiles.instagram?data.socialProfiles.instagram:"-"}</td>
@@ -104,6 +120,14 @@ function VolunteerCard({data,index,mainAttendence})
           <td>{data.socialProfiles.twitter?data.socialProfiles.twitter:"-"}</td>
           <td>{data.socialProfiles.linkedIn?data.socialProfiles.linkedIn:"-"}</td>
           <td>{data.socialProfiles.website?data.socialProfiles.website:"-"}</td>
+          <td>{data.password}</td>
+          <td>
+            <button 
+            onClick={(event)=>deleteAccount(event)}
+            style={{backgroundColor:"#ff1000",border:"none",color:"white",padding:"5px",fontWeight:"500",fontSize:"16px",borderRadius:"5px"}}
+            >delete</button>
+          </td>
+          
         </tr>
 }
 
@@ -140,7 +164,7 @@ function AllVolunteers() {
         <th className='all-volunteers-table-head-data' style={{width:"80px"}}>branch</th>
         <th className='all-volunteers-table-head-data'  style={{width:"80px"}}>section</th>
         <th className='all-volunteers-table-head-data'  style={{width:"200px"}}>college email</th>
-        <th className='all-volunteers-table-head-data'  style={{width:"250px"}}>personal email</th>
+        <th className='all-volunteers-table-head-data'  style={{width:"270px"}}>personal email</th>
         <th className='all-volunteers-table-head-data' style={{width:"100px"}}>a/c created on</th>
         <th className='all-volunteers-table-head-data'  style={{width:"100px"}}>date of Birth</th>
         <th className='all-volunteers-table-head-data'>Contact numbers</th>
@@ -167,6 +191,10 @@ function AllVolunteers() {
         <th className='all-volunteers-table-head-data'>
           <CiGlobe size={20}/>
           <label style={styles.socialMediaLabel}>website</label>
+        </th>
+        <th>password</th>
+        <th className='all-volunteers-table-head-data'>
+          actions
         </th>
       </thead>
       <tbody>
