@@ -12,6 +12,7 @@ const websiteAPI = require('./APIs/websiteAPI')
 const APICallCounter = require("./Middlewares/APICallCounter")
 const DBAccess = require("./Middlewares/DBAccess")
 const ReactCounter = require("./Middlewares/ReactCounter")
+const eventsAPI = require("./APIs/eventsAPI")
 
 app.use(exp.json())
 app.use(cors())
@@ -51,6 +52,7 @@ app.get('/initialLoad',ReactCounter)
 app.use('/volunteers',volunteersAPI)
 app.use('/admin',adminAPI)
 app.use('/websiteData',websiteAPI)
+app.use('/events',eventsAPI)
 
 app.use('*',(req,res)=>{
     res.sendFile(path.join(__dirname, './build' , "index.html"));
