@@ -10,6 +10,8 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
 
+import Images from '../Media'
+
 
 function SignUpEmail({sendDataToParent})
 {
@@ -40,7 +42,7 @@ function SignUpEmail({sendDataToParent})
           {
             valid == 0 ?
             <div style={{textAlign:"center"}}>
-              <b>use your college email-id</b>
+              <b>Verify your College e-mail id</b><br/>
               <br/>
               <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_AUTH_CLIENT_ID}>
                 <GoogleLogin onSuccess={onSuccess}/>
@@ -442,7 +444,14 @@ function SignUp() {
 
   return (
     <div style={{display:"flex",justifyContent:"space-around"}}>
-      <form style={{backgroundColor:"white",marginTop:"20px",borderRadius:"10px",padding:"10px",color:"black"}}>
+      <form className='sign-up-nss'>
+        <center>
+          <b style={{color:"red"}}>Sign up</b><br/>
+          <img src={Images.nssLogo} width="100px"/>
+          <br/>
+          <b>NSS VNR-VJIET</b>
+          <br/><br/><br/>
+        </center>
         {
           state == 0 ?
           <SignUpEmail sendDataToParent={handleDataFromEmail}/>

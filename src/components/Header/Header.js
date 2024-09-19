@@ -19,7 +19,7 @@ function DeskTopView()
     }
     return <div className='desktop-header-navbar'>
                 <div onClick={()=>naviagte('/')}>
-                    <img style={{width:"80px"}} src={Images.nssLogo}/>
+                    <img style={{width:"80px",cursor:"pointer"}} src={Images.nssLogo}/>
                 </div>
                 <div className='desktop-header-navbar-2'>
                     <div className='desktop-header-nav-items' onClick={()=>handleClick('about')}>

@@ -1,24 +1,58 @@
-import React from 'react'
-import { useNavigate,Outlet } from 'react-router-dom'
+import React, { useState } from 'react';
+import { useNavigate, Outlet } from 'react-router-dom';
+import './Team.css';
+import Images from '../Media';
+
+function TeamHeader(){
+  const navigate = useNavigate()
+
+  return <div style={{display:"flex",justifyContent:"space-around",alignItems:"center"}} className='team-nss-header'>
+    <img 
+    src={Images.nssLogo} 
+    width="100px"
+    onClick={()=>navigate('../')}
+    style={{cursor:"pointer"}}
+    />
+    <b style={{fontSize:"30px"}}>Team NSS VNR VJIET</b>
+  </div>
+}
 
 function Team() {
   const navigate = useNavigate();
+  const [state, setState] = useState('2024'); // Initially setting to '2024'
+  
+  const styles = {
+    clicked: { backgroundColor: 'black',color:"white" }
+  };
+  
+  const years = ['2024', '2023', '2022'];
+
   return (
     <div>
+      <TeamHeader />
       <div>
-          <header style={{display:"flex",justifyContent:"space-around",width:"500px"}}>
-              <nav onClick={() => navigate('./year-2024')}>2024</nav>
-              <nav onClick={() => navigate('./year-2023')}>2023</nav>
-              <nav onClick={() => navigate('./year-2022')}>2022</nav>
-              <nav onClick={() => navigate('./year-2021')}>2021</nav>
-              <nav onClick={() => navigate('./year-2020')}>2020</nav>
+        <center>
+          <header className='team-nss-navbar'>
+            {
+            years.map(year => (
+                                <nav
+                                  className='team-nss-nav-item'
+                                  key={year}
+                                  style={state === year ? styles.clicked : {}}
+                                  onClick={() => { navigate(`./year-${year}`); setState(year); }}
+                                >
+                                  {year}
+                                </nav>
+                              ))
+            }
           </header>
-          <div>
-              <Outlet/>
-          </div>
+        </center>
+        <div>
+          <Outlet />
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Team
+export default Team;

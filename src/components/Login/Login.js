@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import './Login.css'
 import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google'
 import { jwtDecode } from 'jwt-decode'
+import Images from '../Media'
 
 function Login() {
     const navigate = useNavigate()
@@ -101,8 +102,10 @@ function Login() {
     }
   return (
     <div style={{display:"flex",justifyContent:"space-around",alignItems:"center"}}>
-      <div style={{backgroundColor:"white",color:"black",borderRadius:"10px",padding:"10px",marginTop:"20px"}}>
+      <div className='login-form-volunteer'>
         <center>
+          <img src={Images.nssLogo} width="100px"/>
+          <br/>
           <b style={{fontSize:"32px"}}>NSS-Volunteer <br/>login</b><br/>
         </center>
         <form style={{textAlign:"center"}} onSubmit={(event)=>loginToServer(event)}>

@@ -6,16 +6,8 @@ export const ImagesScrollData = [
       text:"NSS VNRVJIET"
     },
     {
-        url:'https://www.careinsurance.com/upload_master/media/posts/June2020/IQKrrYI3nqo0i9PNqO7W.jpg',
-        text:'blood donation'
-    },
-    {
         url:'https://ecofriendlyganeshaidols.com/wp-content/uploads/2020/03/CLAY-GANESHA-AG7028.jpg',
         text:"clay ganesha"
-    },
-    {
-        url:'https://minister-highereducation.kerala.gov.in/wp-content/uploads/2024/08/More-NSS-schemes-to-bring-tears-to-Wayanad.jpg',
-        text:'VNR for wayanad'
     },
     {
         url:'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725895046/IMG_20240906_132325559_HDR_hgk799.jpg',
@@ -24,10 +16,6 @@ export const ImagesScrollData = [
     {
         url:'https://res.cloudinary.com/dpzz0dqxj/image/upload/v1725895419/image_pgirms.png',
         text:"clay ganesha"
-    },
-    {
-        url:'https://minister-highereducation.kerala.gov.in/wp-content/uploads/2024/08/More-NSS-schemes-to-bring-tears-to-Wayanad.jpg',
-        text:'VNR for wayanad'
     }
 ]
 
@@ -263,26 +251,11 @@ export const detailedEvents = [
 export const teamNSS = [
   {
     year:'2024',
-    InChargeFaculty:{
-      name:'name',
-      image:'',
-      designation:'Incharge faculty',
-      SocialProfiles:[
-        {
-          facebook:'',
-          linkedIn:'',
-          email:'',
-          instagram:'',
-          portfolio:''
-        }
-      ],
-      phone:'9398141900'
-    },
     facultyCoOrdinators:[
       {
-      name:'name1',
-      image:'',
-      designation:'faculty co-ordinator',
+      name:'Dr. P. Padmavathi',
+      image:'https://nssvnrvjiet.netlify.app/static/img/mam.617c231.png',
+      designation:'NSS Programme Officer',
       SocialProfiles:[
         {
           facebook:'',
@@ -295,9 +268,9 @@ export const teamNSS = [
       phone:'9398141900'
     },
     {
-      name:'name2',
-      image:'',
-      designation:'faculty co-ordinator',
+      name:'Dr. B. Ashok',
+      image:'https://nssvnrvjiet.netlify.app/static/img/sir.862378b.png',
+      designation:'NSS Programme Officer',
       SocialProfiles:[
         {
           facebook:'',
@@ -315,6 +288,571 @@ export const teamNSS = [
     domains:[
       {
         name:'Out reach',
+        volunteersCount:'30',
+        menteeSeniors:[
+          {
+            name:'senior - 1',
+            image:'',
+            designation:'designation - 1',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'senior - 2',
+            image:'',
+            designation:'designation - 2',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'senior - 3',
+            image:'',
+            designation:'designation - 3',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          }
+        ],
+        volunteers:[
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          }
+        ]
+      },
+      {
+        name:'Logistics',
+        volunteersCount:'30',
+        menteeSeniors:[
+          {
+            name:'senior - 1',
+            image:'',
+            designation:'designation - 1',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'senior - 2',
+            image:'',
+            designation:'designation - 2',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'senior - 3',
+            image:'',
+            designation:'designation - 3',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          }
+        ],
+        volunteers:[
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          }
+        ]
+      },
+      {
+        name:'Documentation',
+        volunteersCount:'30',
+        menteeSeniors:[
+          {
+            name:'senior - 1',
+            image:'',
+            designation:'designation - 1',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'senior - 2',
+            image:'',
+            designation:'designation - 2',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'senior - 3',
+            image:'',
+            designation:'designation - 3',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          }
+        ],
+        volunteers:[
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          }
+        ]
+      },
+      {
+        name:'Creative Team',
+        volunteersCount:'30',
+        menteeSeniors:[
+          {
+            name:'senior - 1',
+            image:'',
+            designation:'designation - 1',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'senior - 2',
+            image:'',
+            designation:'designation - 2',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'senior - 3',
+            image:'',
+            designation:'designation - 3',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          }
+        ],
+        volunteers:[
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          }
+        ]
+      },
+      {
+        name:'PR Team',
+        volunteersCount:'30',
+        menteeSeniors:[
+          {
+            name:'senior - 1',
+            image:'',
+            designation:'designation - 1',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'senior - 2',
+            image:'',
+            designation:'designation - 2',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'senior - 3',
+            image:'',
+            designation:'designation - 3',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          }
+        ],
+        volunteers:[
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          },
+          {
+            name:'volunteer - 1',
+            image:'',
+            designation:'faculty co-ordinator',
+            SocialProfiles:[
+              {
+                facebook:'',
+                linkedIn:'',
+                email:'',
+                instagram:'',
+                portfolio:''
+              }
+            ],
+            phone:'9398141900'
+          }
+        ]
+      },
+      {
+        name:'Treasury Team',
         volunteersCount:'30',
         menteeSeniors:[
           {

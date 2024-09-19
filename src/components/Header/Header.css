@@ -16,6 +16,7 @@
 .desktop-header-nav-items{
     color: blue;
     margin-right: 20px;
+    cursor:pointer;
 }
 .desktop-header-nav-items:hover{
     color: var(--primary-color); 

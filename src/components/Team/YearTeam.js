@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { teamNSS } from '../Constants';
+import './Team.css'
 
 import { FaFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
@@ -11,84 +12,134 @@ import { MdOutlinePersonOutline } from "react-icons/md";
 
 function FacultySeniorCard({data})
 {
-    return  <div style={{margin:"10px",backgroundColor:"#6b6b6b",borderRadius:"10px",padding:"5px",width:"fit-content",width:"250px",height:"300px"}}>
+    const [hovered,setHovered] = useState(false);
+    
+    return  <div 
+                className='team-nss-faculty-card' 
+                onMouseEnter={()=>setHovered(true)} 
+                onMouseLeave={()=>setHovered(false)}
+                onClick={()=>hovered?setHovered(false):setHovered(true)}
+                >
                 {
-                    data.image ?
-                    <img src={data.image} alt='image' width="250px"/>
+                    !hovered ?
+                    <div onMouseEnter={()=>setHovered(true)}>
+                        {
+                            data.image ?
+                            <img src={data.image} alt='image' width="250px" />
+                            :
+                            <MdOutlinePersonOutline color='black' size={170}/>
+                        }
+                        <br/>
+                        <b>{data.name}</b>
+                    </div>
                     :
-                    <MdOutlinePersonOutline color='black' size={170}/>
+                    <div onMouseLeave={()=>setHovered(false)}>
+                        {
+                            data.image ?
+                            <img src={data.image} alt='image' width="150px" />
+                            :
+                            <MdOutlinePersonOutline  color='black' size={120}/>
+                        }
+                        <br/>
+                        <div style={{marginTop:"5em"}}>
+                            <FaFacebook color='black' size={25} style={{margin:"5px",cursor:"pointer"}} onClick={()=>window.open(data.SocialProfiles.facebook)}/>
+                            <FaLinkedin color='black' size={25} style={{margin:"5px",cursor:"pointer"}} onClick={()=>window.open(data.SocialProfiles.linkedIn)}/>
+                            <MdOutlineMail color='black' size={25} style={{margin:"5px",cursor:"pointer"}} onClick={()=>window.open(data.SocialProfiles.email)}/>
+                            <AiFillInstagram color='black' size={25} style={{margin:"5px",cursor:"pointer"}} onClick={()=>window.open(data.SocialProfiles.instagram)}/>
+                            <IoIosGlobe color='black' size={25} style={{margin:"5px",cursor:"pointer"}} onClick={()=>window.open(data.SocialProfiles.portfolio)}/>
+                        </div>
+                        <p>{data.phone}</p>
+                    </div>
                 }
-                <br/>
-                <b>{data.name}</b>
-                <div>
-                    <FaFacebook color='black' style={{margin:"5px"}} onClick={()=>window.open(data.SocialProfiles.facebook)}/>
-                    <FaLinkedin color='black' style={{margin:"5px"}} onClick={()=>window.open(data.SocialProfiles.linkedIn)}/>
-                    <MdOutlineMail color='black' style={{margin:"5px"}} onClick={()=>window.open(data.SocialProfiles.email)}/>
-                    <AiFillInstagram color='black' style={{margin:"5px"}} onClick={()=>window.open(data.SocialProfiles.instagram)}/>
-                    <IoIosGlobe color='black' style={{margin:"5px"}} onClick={()=>window.open(data.SocialProfiles.portfolio)}/>
-                </div>
-                <p>{data.phone}</p>
             </div>
 }
 
 function VolunteerCard({data})
 {
-    return <div style={{backgroundColor:"#6b6b6b",width:"200px",textAlign:"left",padding:"3px",borderRadius:"3px",margin:"5px"}}>
+    const [hoverd,setHovered] = useState(false)
+    return <div 
+                className='team-nss-volunteer-card' 
+                onMouseEnter={()=>setHovered(true)} 
+                onMouseLeave={()=>setHovered(false)}
+                onClick={()=>hoverd?setHovered(false):setHovered(true)}
+                >
                 {
-                    data.image?
-                    <img src={data.image} width="100px" style={{borderRadius:"40px"}}/>
+                    !hoverd ?
+                    <div>
+                        {
+                            data.image?
+                            <img src={data.image} width="170px" style={{borderRadius:"90px"}}/>
+                            :
+                            <MdOutlinePersonOutline size={170} style={{borderRadius:"90px",position:"relative",top:"5px",marginRight:"10px",backgroundColor:"#cccccc"}}/>
+                        }
+                        <br/>
+                        <b>{data.name}</b>
+                    </div>
                     :
-                    <MdOutlinePersonOutline size={20} style={{backgroundColor:"black",borderRadius:"10px",position:"relative",top:"5px",marginRight:"10px"}}/>
+                    <div>
+                        {
+                            data.image?
+                            <img src={data.image} width="100px" style={{borderRadius:"90px"}}/>
+                            :
+                            <MdOutlinePersonOutline size={100} style={{borderRadius:"90px",position:"relative",top:"5px",marginRight:"10px",backgroundColor:"#cccccc"}}/>
+                        }
+                        <div style={{marginTop:"1em"}}>
+                            <FaFacebook color='black' size={18} style={{margin:"5px",cursor:"pointer"}} onClick={()=>window.open(data.SocialProfiles.facebook)}/>
+                            <FaLinkedin color='black' size={18} style={{margin:"5px",cursor:"pointer"}} onClick={()=>window.open(data.SocialProfiles.linkedIn)}/>
+                            <MdOutlineMail color='black' size={18} style={{margin:"5px",cursor:"pointer"}} onClick={()=>window.open(data.SocialProfiles.email)}/>
+                            <AiFillInstagram color='black' size={18} style={{margin:"5px",cursor:"pointer"}} onClick={()=>window.open(data.SocialProfiles.instagram)}/>
+                            <IoIosGlobe color='black' size={18} style={{margin:"5px",cursor:"pointer"}} onClick={()=>window.open(data.SocialProfiles.portfolio)}/>
+                        </div>
+                        <p>{data.phone}</p>
+                    </div>
                 }
-                <b>{data.name}</b>
+                
             </div>
 }
 
 function YearTeam({year}) {
     
   return (
-    <div>
+    <div style={{marginBottom:"30vh"}}>
         <center>
             <h3>NSS Team : {year}</h3>
         </center>
+        <br/>
         {
             teamNSS.filter(data=>()=>data.year==year).map(team=><div style={{textAlign:"center"}}>
-                <b>Incharge faculty</b>
-                <br/>
-                <center>
-                    <FacultySeniorCard data={team.InChargeFaculty}/>
-                </center>
-                <br/>
-                <div style={{display:"flex",justifyContent:"space-around"}}>
+                <b><b>Faculty co-ordinators</b></b>
+                <div style={{display:"flex",justifyContent:"space-around",flexWrap:"wrap"}}>
                     {
                         team.facultyCoOrdinators.map(data=><FacultySeniorCard data={data}/>)
                     }
                 </div>
                 <br/>
+               
                 <div>
-                    <b>volunteers : {team.volunteersCount}</b><br/>
-                    <b>events conducted : {team.eventsConducted}</b>
+                    <b>Domains</b>
+                    {
+                        team.domains.map(domain=><div className='team-nss-domain-card'>
+                                                    <b style={{fontSize:"30px",textAlign:"left",color:"blue"}}>{domain.name}</b>
+                                                    <br/>
+                                                    <br/>
+                                                    {/* <label>volunteers : {domain.volunteersCount}</label><br/>
+                                                    <b>senior mentees</b> */}
+                                                    <div style={{display:"flex",justifyContent:"space-around",flexWrap:"wrap"}}>
+                                                        {
+                                                            domain.menteeSeniors.map(data=><VolunteerCard data={data}/>)
+                                                        }
+                                                    </div>
+                                                    {/* <div>
+                                                        {
+                                                            domain.volunteers.map(data=><VolunteerCard data={data}/>)
+                                                        }
+                                                    </div> */}
+                                                </div>)
+                    }
                 </div>
                 <div>
-                    <center><b>Domains</b></center>
-                    {
-                        team.domains.map(domain=><div>
-                            <b>{domain.name}</b>
-                            <br/>
-                            <label>volunteers : {domain.volunteersCount}</label><br/>
-                            <b>senior mentees</b>
-                            <div style={{display:"flex",justifyContent:"space-around"}}>
-                                {
-                                    domain.menteeSeniors.map(data=><FacultySeniorCard data={data}/>)
-                                }
-                            </div>
-                            <div>
-                                {
-                                    domain.volunteers.map(data=><VolunteerCard data={data}/>)
-                                }
-                            </div>
-                        </div>)
-                    }
+                    <b>volunteers : {team.volunteersCount}</b><br/>
+                    {/* <b>events conducted : {team.eventsConducted}</b> */}
                 </div>
             </div>)
         }

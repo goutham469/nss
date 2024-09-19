@@ -21,3 +21,11 @@
     top: 10px;
     right: 5px;
  }
+ .sign-up-nss{
+    /* {backgroundColor:"white",marginTop:"20px",borderRadius:"10px",padding:"10px",color:"black"} */
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--text-color);
+    margin-top: 20vh;
+ }

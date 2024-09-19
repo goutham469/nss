@@ -84,20 +84,8 @@ function App() {
           element:<YearTeam year="2024"/>
         },
         {
-          path:'year-2023',
-          element:<YearTeam year="2023"/>
-        },
-        {
-          path:'year-2022',
-          element:<YearTeam year="2022"/>
-        },
-        {
-          path:'year-2021',
-          element:<YearTeam year="2021"/>
-        },
-        {
-          path:'year-2020',
-          element:<YearTeam year="2020"/>
+          path:'*',
+          element:<center style={{fontSize:"50px"}}>Under Construction</center>
         }
       ]
     },
