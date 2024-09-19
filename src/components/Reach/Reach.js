@@ -6,15 +6,7 @@ function Reach({ data }) {
 
   return (
     <div 
-      style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        margin: '10px',
-        backgroundColor: '#72a9db',
-        padding: '5px',
-        width: '270px',
-        borderRadius: '10px',
-      }}
+      className='reach-main'
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >

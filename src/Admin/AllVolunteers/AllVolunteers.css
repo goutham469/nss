@@ -10,7 +10,7 @@
   }
   
 .all-volunteers-table-head{
-    border: 2px solid rgb(253, 253, 253);
+    border: 2px solid rgb(0, 0, 0);
     color: gold;
 }
 /* .all-volunteers-table-head-data{
@@ -19,9 +19,12 @@
 } */
 
 td,th{
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     padding: 0px;
     width: "200px";
+}
+td{
+    color: var(--text-color);
 }
 table{
     border-collapse: collapse;

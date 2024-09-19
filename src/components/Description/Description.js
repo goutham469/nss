@@ -8,7 +8,7 @@ import EventMini from '../EventMini/EventMini'
 
 function HeroTextBars({data})
 {
-    return <div style={{backgroundColor:"black",fontFamily:"cursive"}} className='hero-text-bars' >
+    return <div  className='hero-text-bars' >
                 <b>{data.question}</b><br/>
                 <p>{data.answer}</p>
             </div>
@@ -29,7 +29,7 @@ function Description() {
         </div>
         <center id='reach' style={{paddingTop:"10vh"}}>
             <b style={{fontSize:"30px"}}>Our Reach</b>
-            <div style={{display:"flex",justifyContent:"space-between",maxWidth:"600px",flexWrap:"wrap",border:"5px solid white",borderRadius:"10px",padding:"20px"}}>
+            <div style={{display:"flex",justifyContent:"space-between",maxWidth:"600px",flexWrap:"wrap",border:"5px solid black",borderRadius:"10px",padding:"20px"}}>
                 {
                     OurReach.map(data=><Reach data={data}/>)
                 }

@@ -3,4 +3,17 @@
 .tilt {
     transform: rotate(45deg); /* Tilt the image by 60 degrees */
   }
-  
+.reach-main{
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+   background-color: var(--secondary-color);
+
+   padding: 5px;
+   width: 270px;
+   border-radius: 10px;
+}
+.reach-main:hover{
+  transform: scale(1.05);
+  transition: transform  0.3 ease-in-out;
+}

@@ -4,12 +4,20 @@
 }
 
 :root {
-  --primary-color: #272626;
+  --primary-color: #757474;
   --secondary-color: #72a9db;
   --tertiary-color:#4d4b4b;
-  --text-color: #ffffff;
+  --text-color: #000000;
   --font-family: 'Arial, sans-serif';
 }
+
+/* :root {
+  --primary-color: #000000;
+  --secondary-color: #72a9db; 
+  --tertiary-color:#4d4b4b;
+  --text-color: #000000;
+  --font-family: 'Arial, sans-serif';
+} */
 
 body {
   margin: 0;

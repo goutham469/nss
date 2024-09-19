@@ -1,0 +1,16 @@
+.add-event-deatils-navbar{
+    background-color: rgb(213, 211, 211);
+    color: var(--text-color);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.add-event-details-nav-item{
+    padding: 5px;
+    border-radius: 10px;
+}
+.add-event-details-nav-item:hover{
+    background-color: var(--secondary-color)
+}

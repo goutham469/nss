@@ -19,6 +19,9 @@ import UpdateWebsite from './Admin/UpdateWebsite/UpdateWebsite';
 import AllEvents from './Admin/AllEvents/AllEvents';
 import { useEffect } from 'react';
 import Attendence from './Admin/Attendence/Attendence';
+import AddEventDetails from './Admin/AddEventDetails/AddEventDetails';
+import AdminYearEvent from './Admin/AdminYearEvent/AdminYearEvent';
+import AdminNewEvent from './Admin/AdminYearEvent/AdminNewEvent';
 
 function App() {
   const router = createBrowserRouter([
@@ -141,6 +144,28 @@ function App() {
         {
           path:'Attendence',
           element:<Attendence/>
+        },
+        {
+          path:'add-event-details',
+          element:<AddEventDetails/>,
+          children : [
+            {
+              path:'new-event',
+              element:<AdminNewEvent/>
+            },
+            {
+              path:'2024',
+              element:<AdminYearEvent data="2024"/>
+            },
+            {
+              path:'2023',
+              element:<AdminYearEvent data="2023"/>
+            },
+            {
+              path:'2022',
+              element:<AdminYearEvent data="2022"/>
+            }
+          ]
         }
       ]
     },

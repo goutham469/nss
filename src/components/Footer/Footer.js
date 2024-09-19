@@ -15,7 +15,7 @@ function Footer() {
     },[])
 
     return (
-        <div style={{ display: "flex", justifyContent: "space-around",padding:"10px", flexWrap: "wrap" ,backgroundColor:"black",paddingBottom:"30px"}}>
+        <div style={{ display: "flex", justifyContent: "space-around",padding:"10px", flexWrap: "wrap" ,backgroundColor:"black",color:"white",paddingBottom:"30px"}}>
             <div style={{textAlign:"center",margin:"5px"}}>
                 <center>
                     <p style={{borderBottom:"1px solid yellow",width:"fit-content",marginBottom:"20px"}}>About us</p>

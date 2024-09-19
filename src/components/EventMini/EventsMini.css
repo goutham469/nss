@@ -1,0 +1,12 @@
+.event-mini-main-card{
+    /* style={{backgroundColor:"#4d4b4b",borderRadius:"20px",width:"300px",height:"400px",margin:"20px"}} */
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+}
+.event-mini-main-card:hover{
+    transform: scale(1.07); /* Scales the card to 110% of its size */
+    transition: transform 0.3s ease-in-out;
+}

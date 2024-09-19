@@ -7,7 +7,7 @@ function EventMini({data}) {
   return (
     <div 
         onMouseLeave={()=>setHover(false)}
-        style={{backgroundColor:"#4d4b4b",borderRadius:"20px",width:"300px",height:"400px",margin:"20px"}}
+        className='event-mini-main-card'
      >
        
         {
@@ -33,7 +33,7 @@ function EventMini({data}) {
                 {/* <iframe src={data.image} width="100%" borderRadius="10px"/> */}
                 {/* <iframe src="https://drive.google.com/file/d/1d4R3rabNqvzQwf6bYcZ-IMw3y04krlEs/preview" width="100%" height="400px" borderRadius="10px"></iframe> */}
                 <br/>
-                <b style={{fontFamily:"initial",fontSize:"20px"}}>{data.name}</b>
+                <b  style={{fontFamily:"initial",fontSize:"20px"}}>{data.name}</b>
                 <br/>
                 <div
                 onMouseLeave={()=>setHover(false)}

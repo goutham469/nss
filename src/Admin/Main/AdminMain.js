@@ -13,7 +13,7 @@ function AdminMain() {
           login ?
             <div>
               <AdminHeader/>
-              <div style={{paddingTop:"50px",color:"white"}}>
+              <div style={{paddingTop:"50px"}}>
                 <Outlet/>
               </div>
             </div>
